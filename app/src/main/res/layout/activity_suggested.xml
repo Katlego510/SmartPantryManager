@@ -9,10 +9,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/teal_dark"
         android:paddingStart="16dp"
         android:paddingTop="16dp"
         android:paddingEnd="16dp"
         android:text="Suggested Recipes"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -20,10 +22,11 @@
         android:id="@+id/tvSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/teal_dark"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:paddingBottom="8dp"
-        android:textColor="#757575" />
+        android:paddingBottom="12dp"
+        android:textColor="@color/teal_light" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -33,7 +36,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvRecipes"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:paddingTop="6dp" />
 
         <TextView
             android:id="@+id/tvNoMatch"
@@ -42,6 +46,7 @@
             android:gravity="center"
             android:padding="24dp"
             android:text="No recipes match your pantry yet - add more ingredients"
+            android:textColor="@color/teal_dark"
             android:textSize="16sp"
             android:visibility="gone" />
     </FrameLayout>

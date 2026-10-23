@@ -9,8 +9,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/teal_dark"
         android:padding="16dp"
         android:text="My Pantry"
+        android:textColor="@android:color/white"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -18,9 +20,9 @@
         android:id="@+id/tvBanner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFF3CD"
+        android:background="#FFE082"
         android:padding="10dp"
-        android:textColor="#664D03"
+        android:textColor="#5D4037"
         android:visibility="gone" />
 
     <FrameLayout
@@ -33,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false"
+            android:paddingTop="6dp"
             android:paddingBottom="80dp" />
 
         <TextView
@@ -42,6 +45,7 @@
             android:gravity="center"
             android:padding="24dp"
             android:text="Your pantry is empty - tap + to add ingredients"
+            android:textColor="@color/teal_dark"
             android:textSize="16sp"
             android:visibility="gone" />
 

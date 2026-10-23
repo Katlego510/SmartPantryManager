@@ -7,8 +7,11 @@
     android:layout_marginTop="6dp"
     android:layout_marginEnd="12dp"
     android:layout_marginBottom="6dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="2dp">
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/teal_light"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,6 +30,7 @@
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/teal_dark"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -34,7 +38,9 @@
                 android:id="@+id/tvQty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp" />
+                android:textColor="@color/coral_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvExpiry"
@@ -50,7 +56,7 @@
             android:background="@android:color/transparent"
             android:contentDescription="Edit"
             android:src="@android:drawable/ic_menu_edit"
-            android:tint="#757575" />
+            app:tint="@color/teal" />
 
         <ImageButton
             android:id="@+id/btnDelete"
@@ -59,6 +65,6 @@
             android:background="@android:color/transparent"
             android:contentDescription="Delete"
             android:src="@android:drawable/ic_menu_delete"
-            android:tint="#D32F2F" />
+            app:tint="@color/coral" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

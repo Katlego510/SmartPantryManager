@@ -7,8 +7,11 @@
     android:layout_marginTop="6dp"
     android:layout_marginEnd="12dp"
     android:layout_marginBottom="6dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="2dp">
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="2dp"
+    app:strokeColor="@color/coral_light"
+    app:strokeWidth="1dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,6 +23,7 @@
             android:id="@+id/tvRecipeName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/teal_dark"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -27,7 +31,7 @@
             android:id="@+id/tvRecipeMeta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#757575"
+            android:textColor="@color/coral_dark"
             android:textSize="13sp" />
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>
